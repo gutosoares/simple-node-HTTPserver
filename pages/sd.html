@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistemas Distribuidos</title>
+    <style>
+        body {
+            margin: 0 auto;
+            max-width: 900px;
+            background-color: #ecf0f1;
+        }
+        h1, h3 {
+            font-family: "Helvetica", Arial, sans-serif;
+            color: #16a085;
+        }
+
+        p {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 20px;
+        }
+
+        img {
+            margin: 0 auto;
+        }
+
+        footer {
+            border-top: 1px solid #16a085;
+            margin-top: 20px;
+        }
+
+        footer p {
+            text-align: center;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de processamento distribuído</h1>
+    <p>
+        Um sistema de processamento distribuído ou paralelo é um sistema que interliga vários nós de processamento (computadores individuais, não necessariamente homogéneos) de maneira que um processo de grande consumo seja executado no nó "mais disponível", ou mesmo subdividido por vários nós. Conseguindo-se, portanto, ganhos óbvios nestas soluções: uma tarefa qualquer, se divisível em várias subtarefas pode ser realizada em paralelo.
+        A nomenclatura geralmente utilizada neste contexto é HPC (High Performance Computing) e/ou DPC (Distributed/Parallel Computing).
+    </p>
+    <h3>Desenvolvimento</h3>
+    <p>
+        Este é um assunto muito vasto e, embora com alguma idade, só em 2001 se começou a falar em padrões para estas soluções, que são utilizadas (em larga escala) geralmente nos meios científicos e outros de cálculo intensivo pela sua extensibilidade. São bastante flexíveis, já que permitem a coexistência de sistemas desenhados especificamente para isso (por exemplo, a arquitectura NUMA), de sistemas desktop, e mesmo de sistemas considerados obsoletos, mas não o suficiente para permitir a coexistência de soluções semelhantes.
+    </p>
+
+    <p>
+        Antes de avançar, será necessário distinguir um sistema de multiprocessamento paralelo (SMP) de um sistema distribuído. Para um sistema ser de processamento distribuído, uma ou várias unidades de processamento (CPU) estará separada fisicamente da(s) outra(s), enquanto que num sistema SMP todas as unidades de processamento se encontram na mesma máquina. Ambos sistemas são capazes de processamento paralelo, e qualquer um deles pode ser visto como elemento de um sistema distribuído!
+    </p>
+
+    <p>
+        Com os desenvolvimentos nesta área, surgiram soluções por software que fazem, geralmente (mas não necessariamente), alterações no núcleo do sistema operativo e que, na maioria dos casos, não são compatíveis entre elas, e dificilmente entre versões diferentes da mesma solução. Assentam, no entanto, em arquitecturas de comunicação padrão, como é o caso da Parallel Virtual Machine e Message Passing Interface. Resumidamente, estas arquitecturas conseguem transportar um processo (tarefa) e o seu contexto (ficheiros abertos, etc.) pela rede até outro nó. O nó que originou o processo passa, assim, a ser apenas um receptor dos resultados desse processo.
+
+        Actualmente, a principal barreira destes sistemas é implementar mecanismos de Inter-Process Communication (IPC), os Distributed IPC, dada a sua extrema complexidade.
+    </p>
+
+    <center>
+        <img src="http://i1.wp.com/res.cloudinary.com/ci-ncia-da-computa-o/image/upload/v1428121310/rede-de-computadores1_kpcu5u.jpg?resize=630%2C379" alt="Sistemas Distribuidos">
+    </center>
+
+    <footer>
+        <p>
+            Augusto Soares Pereira - 201210320 <br>
+            Lucas Caixeta Simão - 2012103117 <br>
+            Renan Villela Oliveira - 201311127
+        </p>
+    </footer>
+
+</body>
+</html>
